@@ -1,6 +1,6 @@
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,FlatList,Image} from 'react-native';
 import {styles} from "./src/styles/styles";
 import obd2 from 'react-native-obd2';
 import api from "./src/services/api"
@@ -30,22 +30,32 @@ export default class App extends Component {
     
     
   };
+  renderItem = ({item})=>(
+    <View style ={styles.itemContainer}>
+      <Text style={styles.IdCar} >{item.idReadingFromCar}</Text>
+      <Text style={styles.predicted}>{item.predictedValue}</Text>
+      <Text style={styles.predicted}>{item.data}</Text>
+    </View>
+  )
   render() {
     return (
     <View style= {styles.container} >
-      <Text>Teste</Text>
-      {/* {this.state.response.data.map(resp =>(<Text>{resp}</Text>))} */
-    console.log(`\nstate.response:\n`+this.state.response)}
-    {
+    {/* {
       this.state.response.map((item) => {
         return (
-          <Text>
+          <Text key={item.idReadingFromCar}>
             {item.idReadingFromCar}
             {`\n`+item.speed}
           </Text>
-        )
+          )
       })
-    }
+    } */}
+    <FlatList
+          contentContainerStyle = {styles.list}
+          data = {this.state.response}
+          keyExtractor={(item) => item.idReadingFromCar}
+          renderItem= {this.renderItem}
+          />
     </View>
     );
   }

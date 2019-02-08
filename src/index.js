@@ -1,4 +1,11 @@
-import React from 'react'
-import Routes from './routes/routes'
-const App = () =><Routes/>;
-export default App;
+import main from "./pages/main"
+import ObdPage from './pages/ObdPage';
+
+import { createStackNavigator } from 'react-navigation';
+
+const StackNavigator = createStackNavigator({
+  Home: main,
+  About: ObdPage,
+});
+
+export default { StackNavigator }

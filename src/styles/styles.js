@@ -2,15 +2,44 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
  export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#F5FCFF',
+      backgroundColor: '#fafafa',
     },
-    welcome: {
-      fontSize: 20,
-      textAlign: 'center',
-      margin: 10,
+    list:{
+      padding:20 
     },
-    
+    itemContainer:{
+      backgroundColor : "#FFF",
+      borderWidth : 1,
+      bordercolor : "#DDD",
+      borderRadius : 5,
+      padding : 2,
+     marginBottom : 20 
+    },
+    IdCar :{
+      fontSize:18,
+      fontWeight : "bold",
+      color :"#333"
+    },
+    predicted :{
+      fontSize :16,
+      color :"#999",
+      marginTop :5,
+      lineHeight :24
+    },
+    Sbutton:{
+    height : 42,
+    borderRadius:5,
+    borderWidth :2 ,
+    bordercolor : "#DA552F",
+    backgroundColor:"transparent",
+    justifyContent : "center",
+    alignItem : "center",
+    marginTop: 10
+    },
+    SbuttonText :{
+      fontSize: 16,
+      color :"#DA552F",
+      fontWeight:"bold"
+    }
   });
   
