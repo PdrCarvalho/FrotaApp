@@ -1,5 +1,5 @@
 {
-  "name": "FrotaApp",
+  "name": "FrotaInteligenteApp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,11 +12,12 @@
     "react-native": "0.58.4",
     "react-native-gesture-handler": "^1.0.15",
     "react-native-obd2": "0.0.2",
-    "react-navigation": "^2.18.3"
+    "react-navigation": "^3.1.5"
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "24.1.0",
+    "eslint": "^5.13.0",
     "jest": "24.1.0",
     "metro-react-native-babel-preset": "0.51.1",
     "react-test-renderer": "16.6.3"

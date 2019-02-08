@@ -1,11 +1,18 @@
 import main from "./pages/main"
-import ObdPage from './pages/ObdPage';
+import second from './pages/ObdPage';
 
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator,createAppContainer } from 'react-navigation';
 
-const StackNavigator = createStackNavigator({
-  Home: main,
-  About: ObdPage,
-});
+const StackNavigator = createAppContainer (createStackNavigator({
+  Home:{ 
+    screen: main,
+  },
+  About: {
+    screen: second,
+  },
+  },
+  {
+  initialRouteName: 'Home',
+}));
 
-export default { StackNavigator }
+export default { StackNavigator };
