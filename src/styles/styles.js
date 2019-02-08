@@ -10,7 +10,7 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
     itemContainer:{
       backgroundColor : "#FFF",
       borderWidth : 1,
-      bordercolor : "#DDD",
+      borderColor : "#DDD",
       borderRadius : 5,
       padding : 2,
      marginBottom : 20 
@@ -30,10 +30,10 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
     height : 42,
     borderRadius:5,
     borderWidth :2 ,
-    bordercolor : "#DA552F",
+    borderColor : "#DA552F",
     backgroundColor:"transparent",
     justifyContent : "center",
-    alignItem : "center",
+    alignItems : "center",
     marginTop: 10
     },
     SbuttonText :{

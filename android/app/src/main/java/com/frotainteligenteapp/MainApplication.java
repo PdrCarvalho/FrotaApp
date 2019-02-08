@@ -1,10 +1,12 @@
-package com.frotaapp;
+package com.frotainteligenteapp;
+
+import android.app.Application;
 
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.jetbridge.reactobd2.ReactNativeOBD2Package;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -25,8 +27,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNGestureHandlerPackage(),
-            new ReactNativeOBD2Package()
+            new ReactNativeOBD2Package(),
+            new RNGestureHandlerPackage()
       );
     }
 
