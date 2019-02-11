@@ -37,7 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
       return "index";
     }
   };
-
+  
   @Override
   public ReactNativeHost getReactNativeHost() {
     return mReactNativeHost;
@@ -48,4 +48,11 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
   }
+  @Override
+    protected List<ReactPackage> getPackages() {
+        return Arrays.<ReactPackage>asList(
+                new MainReactPackage(),
+                new MapsPackage()
+        );
+    }
 }
